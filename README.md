@@ -2,7 +2,7 @@
 This project is intends create an activity that loads any fragment of projects with some prerequisites like bundle, title etc
 
 
-Sample usage 
+Sample usage - 1
 ----------------------
 ```
               Bundle bundle = new Bundle();
@@ -18,7 +18,18 @@ Sample usage
                         .startActivity(MainActivity.this);
                         
  ```
- 
+
+Sample usage - 2
+----------------------
+```
+              
+                new ContainerModel()
+                        .setTitle("Fragment 1")
+                        .setFragmentNumber(Constant.FRAGMENT_1)        
+                        .startActivity(MainActivity.this);
+                        
+ ```
+
  Only setFragmentNumber() is mandatory method, rest all are optionals
                         
                         
